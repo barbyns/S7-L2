@@ -20,9 +20,10 @@ saveButton.addEventListener("click", function () {
 });
 
 // Pulsante Reset
+
 resetButton.addEventListener("click", function () {
     textAreainput.value = "";
-    localStorage.removeItem("form"); // Corretto il metodo
+    localStorage.removeItem("user-form"); // Corretto il metodo
 
     const resetAlert = document.getElementById("reset-alert");
     resetAlert.classList.remove("alert-coming");
